@@ -1,0 +1,45 @@
+User-agent: *
+Allow: /
+Allow: /sitemap.xml
+Allow: /sitemap.html
+Allow: /robots.txt
+
+# Disallow search engines from indexing admin areas
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /dashboard/
+Disallow: /private/
+
+# Disallow parameters that create duplicate content
+Disallow: /*?sort=
+Disallow: /*?filter=
+Disallow: /*?page=
+Disallow: /*?session_id=
+
+# Allow all major crawlers
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+
+User-agent: Slurp
+Allow: /
+Disallow: /admin/
+
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /admin/
+
+User-agent: Baiduspider
+Allow: /
+Disallow: /admin/
+
+User-agent: YandexBot
+Allow: /
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://reelgrabpro.com/sitemap.xml
