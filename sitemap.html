@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sitemap | WishaImage - Complete Directory of All Pages</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Complete sitemap of WishaImage website. Browse all pages including wishes images categories, blog articles, privacy policy, and more.">
+    <meta name="keywords" content="website sitemap, page directory, site navigation, WishaImage pages, site structure">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Sitemap | WishaImage">
+    <meta property="og:description" content="Complete directory of all pages on WishaImage website.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        :root {
+            --primary-color: #4f46e5;
+            --primary-dark: #3730a3;
+            --secondary-color: #fbbf24;
+            --accent-color: #ec4899;
+            --light-color: #f8fafc;
+            --dark-color: #111827;
+            --gray-color: #6b7280;
+            --light-gray: #e5e7eb;
+            --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s ease;
+            --border-radius: 12px;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+            padding-top: 70px;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .logo:hover {
+            color: var(--secondary-color);
+            transition: var(--transition);
+        }
+        
+        /* Back to Home Button */
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 500;
+            margin: 2rem 0;
+            transition: var(--transition);
+        }
+        
+        .back-home:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: var(--card-shadow);
+        }
+        
+        /* Sitemap Content */
+        .sitemap-container {
+            animation: fadeIn 1s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .sitemap-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+        }
+        
+        .sitemap-header h1 {
+            font-size: 2.5rem;
+            color: var(--dark-color);
+            margin-bottom: 1rem;
+        }
+        
+        .sitemap-header p {
+            color: var(--gray-color);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .sitemap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .sitemap-category {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+        }
+        
+        .sitemap-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .category-title {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid rgba(79, 70, 229, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .category-title i {
+            font-size: 1.2rem;
+        }
+        
+        .page-list {
+            list-style: none;
+        }
+        
+        .page-list li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .page-list li:before {
+            content: "→";
+            color: var(--accent-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .page-list a {
+            color: var(--gray-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .page-list a:hover {
+            color: var(--primary-color);
+            padding-left: 5px;
+        }
+        
+        .priority-badge {
+            display: inline-block;
+            font-size: 0.7rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            margin-left: 0.5rem;
+            font-weight: bold;
+        }
+        
+        .high-priority { background: #10b981; color: white; }
+        .medium-priority { background: #fbbf24; color: var(--dark-color); }
+        .low-priority { background: #6b7280; color: white; }
+        
+        /* Statistics Box */
+        .statistics-box {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--card-shadow);
+        }
+        
+        .statistics-box h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: #f8fafc;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-5px);
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.05), rgba(236, 72, 153, 0.05));
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Recommendations Box */
+        .recommendations-box {
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.05), rgba(251, 191, 36, 0.05));
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .recommendations-box h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .recommendations-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .recommendations-box li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .recommendations-box li i {
+            color: var(--secondary-color);
+            position: absolute;
+            left: 0;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: #9ca3af;
+            padding: 3rem 0 2rem;
+            margin-top: 4rem;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #374151;
+            font-size: 0.9rem;
+        }
+        
+        .footer-bottom a {
+            color: #9ca3af;
+            margin: 0 10px;
+            transition: var(--transition);
+        }
+        
+        .footer-bottom a:hover {
+            color: var(--primary-color);
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding-top: 60px;
+            }
+            
+            .sitemap-header h1 {
+                font-size: 2rem;
+            }
+            
+            .sitemap-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .stat-number {
+                font-size: 2rem;
+            }
+            
+            .back-home {
+                width: 100%;
+                justify-content: center;
+                padding: 0.8rem 1rem;
+            }
+            
+            .logo {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .sitemap-header {
+                padding: 1rem 0 2rem;
+            }
+            
+            .sitemap-header h1 {
+                font-size: 1.8rem;
+            }
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Text selection */
+        ::selection {
+            background-color: rgba(79, 70, 229, 0.3);
+            color: var(--dark-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-gift"></i>
+                WishaImage
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Back to Home Button -->
+        <a href="index.html" class="back-home">
+            <i class="fas fa-arrow-left"></i>
+            Back to Home
+        </a>
+        
+        <!-- Sitemap Content -->
+        <div class="sitemap-container">
+            <div class="sitemap-header">
+                <h1><i class="fas fa-sitemap"></i> Website Sitemap</h1>
+                <p>Complete directory of all pages on WishaImage. Browse our entire collection of wishes images, blog articles, and informational pages.</p>
+            </div>
+            
+            <div class="sitemap-grid">
+                <!-- Main Pages -->
+                <div class="sitemap-category">
+                    <h2 class="category-title">
+                        <i class="fas fa-home"></i>
+                        Main Pages
+                    </h2>
+                    <ul class="page-list">
+                        <li><a href="index.html">Homepage <span class="priority-badge high-priority">High</span></a></li>
+                        <li><a href="index.html#categories">Wishes Categories <span class="priority-badge high-priority">High</span></a></li>
+                        <li><a href="index.html#blog-articles">Blog & Articles <span class="priority-badge high-priority">High</span></a></li>
+                        <li><a href="index.html#about">About WishaImage <span class="priority-badge medium-priority">Medium</span></a></li>
+                        <li><a href="index.html#faq">Frequently Asked Questions <span class="priority-badge medium-priority">Medium</span></a></li>
+                    </ul>
+                </div>
+                
+                <!-- Wishes Categories -->
+                <div class="sitemap-category">
+                    <h2 class="category-title">
+                        <i class="fas fa-images"></i>
+                        Wishes Categories
+                    </h2>
+                    <ul class="page-list">
+                        <li><a href="index.html#categories">All Categories <span class="priority-badge high-priority">High</span></a></li>
+                        <li><a href="#">Good Morning Images <span class="priority-badge high-priority">High</span></a></li>
+                        <li><a href="#">Good Night Images <span class="priority-badge high-priority">High</span></a></li>
+                        <li><a href="#">Birthday Wishes <span class="priority-badge high-priority">High</span></a></li>
+                        <li><a href="#">Festival Wishes <span class="priority-badge medium-priority">Medium</span></a></li>
+                        <li><a href="#">Love Wishes <span class="priority-badge medium-priority">Medium</span></a></li>
+                        <li><a href="#">Quotes Images <span class="priority-badge medium-priority">Medium</span></a></li>
+                    </ul>
+                </div>
+                
+                <!-- Blog & Articles -->
+                <div class="sitemap-category">
+                    <h2 class="category-title">
+                        <i class="fas fa-blog"></i>
+                        Blog & Articles
+                    </h2>
+                    <ul class="page-list">
+                        <li><a href="index.html#blog-articles">All Blog Posts <span class="priority-badge medium-priority">Medium</span></a></li>
+                        <li><a href="#">How to Create Beautiful Wishes Images <span class="priority-badge medium-priority">Medium</span></a></li>
+                        <li><a href="#">Best Practices for Sharing Wishes on WhatsApp <span class="priority-badge medium-priority">Medium</span></a></li>
+                        <li><a href="#">Top 10 Wishes Image Trends <span class="priority-badge medium-priority">Medium</span></a></li>
+                        <li><a href="#">How to Choose the Perfect Birthday Wish Image <span class="priority-badge medium-priority">Medium</span></a></li>
+                        <li><a href="#">Festival Wishes: Cultural Sensitivity Guide <span class="priority-badge medium-priority">Medium</span></a></li>
+                        <li><a href="#">Creating Custom Wishes with AI <span class="priority-badge medium-priority">Medium</span></a></li>
+                    </ul>
+                </div>
+                
+                <!-- Support & Information -->
+                <div class="sitemap-category">
+                    <h2 class="category-title">
+                        <i class="fas fa-info-circle"></i>
+                        Support & Information
+                    </h2>
+                    <ul class="page-list">
+                        <li><a href="index.html#contact">Contact Us <span class="priority-badge medium-priority">Medium</span></a></li>
+                        <li><a href="index.html#faq">Help & FAQ <span class="priority-badge medium-priority">Medium</span></a></li>
+                        <li><a href="index.html#about">About Us <span class="priority-badge low-priority">Low</span></a></li>
+                        <li><a href="#">How to Download Images <span class="priority-badge medium-priority">Medium</span></a></li>
+                        <li><a href="#">Sharing Guidelines <span class="priority-badge low-priority">Low</span></a></li>
+                    </ul>
+                </div>
+                
+                <!-- Legal & Policies -->
+                <div class="sitemap-category">
+                    <h2 class="category-title">
+                        <i class="fas fa-gavel"></i>
+                        Legal & Policies
+                    </h2>
+                    <ul class="page-list">
+                        <li><a href="privacy-policy.html">Privacy Policy <span class="priority-badge low-priority">Low</span></a></li>
+                        <li><a href="term-condition.html">Terms of Service <span class="priority-badge low-priority">Low</span></a></li>
+                        <li><a href="disclaimer.html">Disclaimer <span class="priority-badge low-priority">Low</span></a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy <span class="priority-badge low-priority">Low</span></a></li>
+                        <li><a href="dmca.html">DMCA Policy <span class="priority-badge low-priority">Low</span></a></li>
+                    </ul>
+                </div>
+                
+                <!-- Technical Pages -->
+                <div class="sitemap-category">
+                    <h2 class="category-title">
+                        <i class="fas fa-cogs"></i>
+                        Technical Pages
+                    </h2>
+                    <ul class="page-list">
+                        <li><a href="sitemap.html">HTML Sitemap <span class="priority-badge low-priority">Low</span></a></li>
+                        <li><a href="sitemap.xml">XML Sitemap <span class="priority-badge low-priority">Low</span></a></li>
+                        <li><a href="robots.txt">Robots.txt <span class="priority-badge low-priority">Low</span></a></li>
+                        <li><a href="#">Accessibility Statement <span class="priority-badge low-priority">Low</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Sitemap Statistics -->
+            <div class="statistics-box">
+                <h2><i class="fas fa-chart-bar"></i> Sitemap Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">32</div>
+                        <div>Total Pages</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">6</div>
+                        <div>Categories</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">12</div>
+                        <div>High Priority Pages</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" style="color: var(--secondary-color);">Updated</div>
+                        <div>May 2026</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SEO Recommendations -->
+            <div class="recommendations-box">
+                <h2><i class="fas fa-lightbulb"></i> SEO Recommendations</h2>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Submit XML sitemap to Google Search Console</li>
+                    <li><i class="fas fa-check-circle"></i> Link to HTML sitemap in website footer</li>
+                    <li><i class="fas fa-check-circle"></i> Update sitemap monthly with new content</li>
+                    <li><i class="fas fa-check-circle"></i> Use priority tags to guide search engine crawling</li>
+                </ul>
+            </div>
+            
+            <!-- Second Back to Home Button -->
+            <div style="text-align: center; margin: 2rem 0;">
+                <a href="index.html" class="back-home">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>
+                    <a href="index.html">Home</a> |
+                    <a href="privacy-policy.html">Privacy Policy</a> |
+                    <a href="sitemap.html">Sitemap</a> |
+                    <a href="#">Terms of Service</a> |
+                    <a href="index.html#contact">Contact</a>
+                </p>
+                <p>© 2026 WishaImage. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color: #ec4899;"></i> for spreading happiness</p>
+                <p style="margin-top: 10px; font-size: 0.8rem;">This website uses cookies to enhance user experience. By using our site, you consent to our use of cookies.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Back to home button animation
+            const backHomeBtns = document.querySelectorAll('.back-home');
+            backHomeBtns.forEach(btn => {
+                btn.addEventListener('mouseenter', function() {
+                    this.querySelector('i').style.transform = 'translateX(-5px)';
+                    this.querySelector('i').style.transition = 'transform 0.3s ease';
+                });
+                
+                btn.addEventListener('mouseleave', function() {
+                    this.querySelector('i').style.transform = 'translateX(0)';
+                });
+            });
+            
+            // Update year in footer
+            const currentYear = new Date().getFullYear();
+            const yearElement = document.querySelector('footer .footer-bottom p:nth-child(2)');
+            if (yearElement) {
+                yearElement.innerHTML = yearElement.innerHTML.replace('2026', currentYear);
+            }
+            
+            // Update last updated date
+            const lastUpdated = document.querySelector('.stat-item:nth-child(4) div:nth-child(2)');
+            if (lastUpdated) {
+                const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+                const currentDate = new Date();
+                lastUpdated.textContent = `${months[currentDate.getMonth()]} ${currentDate.getFullYear()}`;
+            }
+            
+            // Highlight current page in footer
+            const currentPage = window.location.pathname.split('/').pop();
+            if (currentPage === 'sitemap.html') {
+                const sitemapLinks = document.querySelectorAll('a[href="sitemap.html"]');
+                sitemapLinks.forEach(link => {
+                    link.style.color = 'var(--primary-color)';
+                    link.style.fontWeight = '600';
+                });
+            }
+            
+            // Smooth scroll for anchor links
+            document.querySelectorAll('.page-list a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href === '#' || href === '#!') return;
+                    
+                    if (href.includes('index.html')) {
+                        // This will be handled by the link navigation
+                        return;
+                    }
+                    
+                    e.preventDefault();
+                    const targetElement = document.querySelector(href);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
