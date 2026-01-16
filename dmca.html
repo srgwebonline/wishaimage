@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DMCA Policy | WishaImage - Beautiful Wishes Images for Every Moment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="WishaImage DMCA Policy - Learn about our copyright infringement procedures and how to submit a DMCA takedown notice for unauthorized content.">
+    <meta name="keywords" content="DMCA policy, copyright infringement, takedown notice, intellectual property, DMCA notice, WishaImage DMCA">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="DMCA Policy | WishaImage">
+    <meta property="og:description" content="Read our DMCA policy to understand copyright infringement procedures and how to submit takedown notices.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        :root {
+            --primary-color: #4f46e5;
+            --primary-dark: #3730a3;
+            --secondary-color: #fbbf24;
+            --accent-color: #ec4899;
+            --light-color: #f8fafc;
+            --dark-color: #111827;
+            --gray-color: #6b7280;
+            --light-gray: #e5e7eb;
+            --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s ease;
+            --border-radius: 12px;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+            padding-top: 70px;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .logo:hover {
+            color: var(--secondary-color);
+            transition: var(--transition);
+        }
+        
+        /* Back to Home Button */
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 2rem;
+            transition: var(--transition);
+        }
+        
+        .back-home:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: var(--card-shadow);
+        }
+        
+        /* DMCA Content */
+        .dmca-container {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 3rem;
+            margin: 3rem 0;
+            box-shadow: var(--card-shadow);
+            animation: fadeIn 1s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .dmca-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+        
+        .dmca-header h1 {
+            font-size: 2.5rem;
+            color: var(--dark-color);
+            margin-bottom: 1rem;
+        }
+        
+        .dmca-header .last-updated {
+            color: var(--gray-color);
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+        
+        .dmca-content h2 {
+            font-size: 1.8rem;
+            color: var(--dark-color);
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--light-gray);
+        }
+        
+        .dmca-content h3 {
+            font-size: 1.3rem;
+            color: var(--primary-dark);
+            margin: 1.5rem 0 0.8rem;
+        }
+        
+        .dmca-content p {
+            margin-bottom: 1rem;
+            color: var(--gray-color);
+        }
+        
+        .dmca-content ul, .dmca-content ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .dmca-content li {
+            margin-bottom: 0.5rem;
+            color: var(--gray-color);
+        }
+        
+        .important-box {
+            background-color: rgba(79, 70, 229, 0.05);
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+        
+        .warning-box {
+            background-color: rgba(251, 191, 36, 0.1);
+            border-left: 4px solid var(--secondary-color);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+        
+        .legal-box {
+            background-color: #f8fafc;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            margin: 2rem 0;
+            border: 1px solid var(--light-gray);
+        }
+        
+        .contact-info {
+            background-color: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid #10b981;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        
+        table th, table td {
+            padding: 0.8rem;
+            text-align: left;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        table th {
+            background-color: #f3f4f6;
+            font-weight: 600;
+        }
+        
+        code {
+            background-color: #f3f4f6;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: #9ca3af;
+            padding: 3rem 0 2rem;
+            margin-top: 4rem;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #374151;
+            font-size: 0.9rem;
+        }
+        
+        .footer-bottom a {
+            color: #9ca3af;
+            margin: 0 10px;
+            transition: var(--transition);
+        }
+        
+        .footer-bottom a:hover {
+            color: var(--primary-color);
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding-top: 60px;
+            }
+            
+            .dmca-container {
+                padding: 2rem;
+                margin: 2rem 0;
+            }
+            
+            .dmca-header h1 {
+                font-size: 2rem;
+            }
+            
+            .dmca-content h2 {
+                font-size: 1.5rem;
+            }
+            
+            .dmca-content h3 {
+                font-size: 1.2rem;
+            }
+            
+            table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .dmca-container {
+                padding: 1.5rem;
+                margin: 1.5rem 0;
+            }
+            
+            .dmca-header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .back-home {
+                width: 100%;
+                justify-content: center;
+                padding: 0.8rem 1rem;
+            }
+            
+            .logo {
+                font-size: 1.5rem;
+            }
+            
+            .legal-box, .contact-info {
+                padding: 1.5rem;
+            }
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Text selection */
+        ::selection {
+            background-color: rgba(79, 70, 229, 0.3);
+            color: var(--dark-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-gift"></i>
+                WishaImage
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Back to Home Button -->
+        <a href="index.html" class="back-home">
+            <i class="fas fa-arrow-left"></i>
+            Back to Home
+        </a>
+        
+        <!-- DMCA Policy Content -->
+        <div class="dmca-container">
+            <div class="dmca-header">
+                <h1>DMCA Copyright Policy</h1>
+                <p class="last-updated">Last Updated: May 2026</p>
+            </div>
+            
+            <div class="dmca-content">
+                <p>WishaImage respects the intellectual property rights of others and expects its users to do the same. We comply with the Digital Millennium Copyright Act (DMCA) and other applicable copyright laws.</p>
+                
+                <div class="important-box">
+                    <p><strong>Important:</strong> WishaImage is a platform that hosts user-submitted content. We respond promptly to valid DMCA takedown notices and have a process for addressing copyright infringement claims.</p>
+                </div>
+                
+                <h2>1. Our Copyright Policy</h2>
+                <p>WishaImage operates under the following copyright principles:</p>
+                <ul>
+                    <li>We respect the intellectual property rights of all content creators</li>
+                    <li>We respond to valid DMCA takedown notices within 24-48 hours</li>
+                    <li>We maintain a transparent process for copyright disputes</li>
+                    <li>We provide a counter-notification process for users</li>
+                    <li>We terminate repeat infringers in appropriate circumstances</li>
+                </ul>
+                
+                <h2>2. Reporting Copyright Infringement</h2>
+                <p>If you believe your copyrighted work has been copied and is accessible on WishaImage in a way that constitutes copyright infringement, you may notify us by providing the following information:</p>
+                
+                <div class="legal-box">
+                    <h3>Required Information for DMCA Takedown Notice:</h3>
+                    <ol>
+                        <li><strong>Identification:</strong> Your full name, address, telephone number, and email address</li>
+                        <li><strong>Description:</strong> A description of the copyrighted work that you claim has been infringed</li>
+                        <li><strong>URL(s):</strong> The exact URL(s) of the allegedly infringing content on our website</li>
+                        <li><strong>Ownership Statement:</strong> A statement that you have a good faith belief that the use is not authorized by the copyright owner, its agent, or the law</li>
+                        <li><strong>Accuracy Statement:</strong> A statement under penalty of perjury that the information in your notice is accurate and that you are the copyright owner or authorized to act on the copyright owner's behalf</li>
+                        <li><strong>Signature:</strong> Your electronic or physical signature</li>
+                    </ol>
+                </div>
+                
+                <h3>What Happens After You Submit a DMCA Notice:</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Step</th>
+                            <th>Action</th>
+                            <th>Timeline</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>We review your DMCA notice for completeness</td>
+                            <td>Within 24 hours</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>If valid, we remove or disable access to the infringing content</td>
+                            <td>Within 48 hours</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>We notify the content uploader about the takedown</td>
+                            <td>Within 24 hours of removal</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>We maintain records of the takedown notice</td>
+                            <td>As required by law</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="warning-box">
+                    <p><strong>Warning:</strong> Knowingly misrepresenting that material is infringing may subject you to liability for damages (including costs and attorneys' fees) under Section 512(f) of the DMCA.</p>
+                </div>
+                
+                <h2>3. Counter-Notification Process</h2>
+                <p>If you believe your content was removed in error, you may submit a counter-notification containing:</p>
+                <ul>
+                    <li>Your contact information</li>
+                    <li>Identification of the removed content and its location before removal</li>
+                    <li>A statement under penalty of perjury that you believe the content was removed by mistake</li>
+                    <li>Consent to jurisdiction in federal court if your address is outside the US</li>
+                    <li>Your physical or electronic signature</li>
+                </ul>
+                
+                <h3>Counter-Notification Timeline:</h3>
+                <ul>
+                    <li>We will forward your counter-notification to the original complainant</li>
+                    <li>The complainant has 10 business days to file a lawsuit</li>
+                    <li>If no lawsuit is filed, we may restore the content after 10-14 business days</li>
+                </ul>
+                
+                <h2>4. Repeat Infringer Policy</h2>
+                <p>In accordance with the DMCA and other applicable laws, WishaImage has adopted a policy of terminating, in appropriate circumstances, users who are deemed to be repeat infringers. We may also at our sole discretion limit access to the service and/or terminate the accounts of any users who infringe any intellectual property rights of others, whether or not there is any repeat infringement.</p>
+                
+                <h3>Our Three-Strike Policy:</h3>
+                <ul>
+                    <li><strong>First Strike:</strong> Warning and content removal</li>
+                    <li><strong>Second Strike:</strong> Temporary suspension (7-30 days)</li>
+                    <li><strong>Third Strike:</strong> Permanent account termination</li>
+                </ul>
+                
+                <h2>5. Designated Agent Information</h2>
+                <p>All DMCA notices and counter-notices should be sent to our designated agent:</p>
+                
+                <div class="contact-info">
+                    <h3>Designated Copyright Agent:</h3>
+                    <p><strong>Name:</strong> Copyright Agent</p>
+                    <p><strong>Company:</strong> WishaImage</p>
+                    <p><strong>Email:</strong> dmca@wishaimage.com</p>
+                    <p><strong>Subject Line:</strong> DMCA Notice - [Your Name/Company]</p>
+                </div>
+                
+                <h3>Email Template for DMCA Notice:</h3>
+                <div class="legal-box">
+                    <p>To help expedite the process, use this template:</p>
+                    <code>
+Subject: DMCA Takedown Notice<br>
+To: dmca@wishaimage.com<br>
+<br>
+[Your Full Name]<br>
+[Your Address]<br>
+[Your Phone Number]<br>
+[Your Email Address]<br>
+<br>
+1. Description of copyrighted work:<br>
+[Provide detailed description]<br>
+<br>
+2. Infringing material location:<br>
+[Exact URL(s) on WishaImage]<br>
+<br>
+3. Statements of good faith and accuracy:<br>
+[Include required legal statements]<br>
+<br>
+4. Electronic signature:<br>
+[Your typed name]
+                    </code>
+                </div>
+                
+                <h2>6. Fair Use Considerations</h2>
+                <p>Before submitting a DMCA notice, please consider whether fair use, fair dealing, or a similar exception to copyright applies. Common fair use cases include:</p>
+                <ul>
+                    <li>Criticism or commentary</li>
+                    <li>News reporting</li>
+                    <li>Teaching and research</li>
+                    <li>Parody or satire</li>
+                </ul>
+                
+                <div class="important-box">
+                    <p><strong>Note:</strong> We are not legal experts and cannot determine whether a particular use qualifies as fair use. We process DMCA notices based on the information provided and applicable law.</p>
+                </div>
+                
+                <h2>7. International Copyright Considerations</h2>
+                <p>WishaImage operates globally and respects international copyright laws. While we primarily follow the U.S. DMCA process, we also consider:</p>
+                <ul>
+                    <li>EU Copyright Directive</li>
+                    <li>Berne Convention requirements</li>
+                    <li>Local copyright laws in users' jurisdictions</li>
+                </ul>
+                
+                <h2>8. Policy Updates</h2>
+                <p>We may update this DMCA Policy from time to time. We will notify users of any material changes by posting the new policy on this page and updating the "Last Updated" date.</p>
+                
+                <h2>9. Additional Resources</h2>
+                <p>For more information about copyright law and the DMCA:</p>
+                <ul>
+                    <li><a href="https://www.copyright.gov/dmca-directory/" target="_blank">U.S. Copyright Office DMCA Directory</a></li>
+                    <li><a href="https://www.law.cornell.edu/uscode/text/17/512" target="_blank">DMCA Text (17 U.S.C. § 512)</a></li>
+                    <li><a href="https://www.eff.org/issues/dmca" target="_blank">Electronic Frontier Foundation DMCA Resources</a></li>
+                </ul>
+                
+                <div class="contact-info">
+                    <h3>Need Help?</h3>
+                    <p>If you're unsure whether content infringes your copyright or need guidance with the DMCA process, we recommend consulting with a legal professional.</p>
+                    <p>For general questions about our DMCA policy (not takedown notices), contact: <strong>legal@wishaimage.com</strong></p>
+                </div>
+                
+                <a href="index.html" class="back-home">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>
+                    <a href="index.html">Home</a> |
+                    <a href="privacy-policy.html">Privacy Policy</a> |
+                    <a href="term-condition.html">Terms and Conditions</a> |
+                    <a href="sitemap.html">Sitemap</a>
+                    <a href="dmca.html">DMCA Policy</a> |
+                    <a href="#contact">Contact</a> |
+                </p>
+                <p>© 2026 WishaImage. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color: #ec4899;"></i> for spreading happiness</p>
+                <p style="margin-top: 10px; font-size: 0.8rem;">This website uses cookies to enhance user experience. By using our site, you consent to our use of cookies.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script for smooth back to top
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add active class to DMCA link in footer
+            const currentPage = window.location.pathname.split('/').pop();
+            if (currentPage === 'dmca.html') {
+                const dmcaLinks = document.querySelectorAll('a[href="dmca.html"]');
+                dmcaLinks.forEach(link => {
+                    link.style.color = 'var(--primary-color)';
+                    link.style.fontWeight = '600';
+                });
+            }
+            
+            // Back to home button animation
+            const backHomeBtn = document.querySelector('.back-home');
+            if (backHomeBtn) {
+                backHomeBtn.addEventListener('mouseenter', function() {
+                    this.querySelector('i').style.transform = 'translateX(-5px)';
+                    this.querySelector('i').style.transition = 'transform 0.3s ease';
+                });
+                
+                backHomeBtn.addEventListener('mouseleave', function() {
+                    this.querySelector('i').style.transform = 'translateX(0)';
+                });
+            }
+            
+            // Update last updated year
+            const lastUpdated = document.querySelector('.last-updated');
+            if (lastUpdated) {
+                const currentYear = new Date().getFullYear();
+                lastUpdated.textContent = `Last Updated: May ${currentYear}`;
+            }
+            
+            // Add copy email functionality
+            const emailElement = document.querySelector('.contact-info strong');
+            if (emailElement && emailElement.textContent.includes('@')) {
+                const email = emailElement.textContent.trim();
+                emailElement.style.cursor = 'pointer';
+                emailElement.title = 'Click to copy email address';
+                
+                emailElement.addEventListener('click', function() {
+                    navigator.clipboard.writeText(email).then(() => {
+                        const originalText = this.textContent;
+                        this.textContent = 'Email copied!';
+                        this.style.color = '#10b981';
+                        
+                        setTimeout(() => {
+                            this.textContent = originalText;
+                            this.style.color = '';
+                        }, 2000);
+                    });
+                });
+            }
+            
+            // Add section anchors for easy navigation
+            const sections = document.querySelectorAll('.dmca-content h2, .dmca-content h3');
+            sections.forEach((section, index) => {
+                if (section.tagName === 'H2' || section.tagName === 'H3') {
+                    const id = 'section-' + (index + 1);
+                    section.id = id;
+                    
+                    // Add anchor link icon
+                    const anchor = document.createElement('a');
+                    anchor.href = '#' + id;
+                    anchor.className = 'section-anchor';
+                    anchor.innerHTML = '<i class="fas fa-link"></i>';
+                    anchor.style.marginLeft = '10px';
+                    anchor.style.fontSize = '0.8em';
+                    anchor.style.color = 'var(--primary-color)';
+                    anchor.style.opacity = '0';
+                    anchor.style.transition = 'opacity 0.3s ease';
+                    
+                    section.appendChild(anchor);
+                    
+                    // Show anchor on hover
+                    section.addEventListener('mouseenter', function() {
+                        anchor.style.opacity = '1';
+                    });
+                    
+                    section.addEventListener('mouseleave', function() {
+                        anchor.style.opacity = '0';
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
