@@ -525,62 +525,7 @@
             box-shadow: 0 8px 15px rgba(79, 70, 229, 0.3);
         }
         
-        /* AdSense Units */
-        .adsense-unit {
-            background-color: white;
-            border-radius: var(--border-radius);
-            padding: 2rem;
-            margin: 3rem 0;
-            text-align: center;
-            box-shadow: var(--card-shadow);
-            border: 1px dashed var(--light-gray);
-            animation: adPulse 4s infinite;
-        }
-        
-        @keyframes adPulse {
-            0% { border-color: var(--light-gray); }
-            50% { border-color: var(--primary-color); }
-            100% { border-color: var(--light-gray); }
-        }
-        
-        .adsense-label {
-            display: inline-block;
-            background-color: var(--light-gray);
-            color: var(--gray-color);
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            margin-bottom: 1rem;
-        }
-        
-        .ad-placeholder {
-            height: 250px;
-            background-color: #f3f4f6;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: var(--gray-color);
-            border-radius: 8px;
-            margin: 1rem 0;
-            animation: placeholderPulse 2s infinite;
-        }
-        
-        @keyframes placeholderPulse {
-            0% { opacity: 0.8; }
-            50% { opacity: 1; }
-            100% { opacity: 0.8; }
-        }
-        
-        .ad-placeholder.large {
-            height: 90px;
-        }
-        
-        .ad-placeholder.sidebar {
-            height: 600px;
-            width: 300px;
-            margin: 0 auto;
-        }
+        /* AdSense Units - REMOVED FROM CSS */
         
         /* Blog & Articles Section */
         .blog-articles-grid {
@@ -1449,11 +1394,6 @@
                 gap: 1.5rem;
             }
             
-            .ad-placeholder.sidebar {
-                height: 300px;
-                width: 100%;
-            }
-            
             .cta-buttons {
                 display: flex;
                 flex-direction: column;
@@ -1573,14 +1513,6 @@
             
             .footer-bottom p {
                 line-height: 1.5;
-            }
-            
-            .ad-placeholder.large {
-                height: 70px;
-            }
-            
-            .adsense-unit {
-                padding: 1.5rem;
             }
             
             .blog-article-meta {
@@ -1822,16 +1754,7 @@
         </div>
     </section>
 
-    <!-- AdSense Unit (Top) -->
-    <div class="container">
-        <div class="adsense-unit fade-in">
-            <div class="adsense-label">Advertisement</div>
-            <div class="ad-placeholder">
-                <i class="fas fa-ad"></i>
-                <p>AdSense Leaderboard (728x90)</p>
-            </div>
-        </div>
-    </div>
+    <!-- REMOVED: AdSense Unit (Top) -->
 
     <!-- Popular Categories -->
     <section class="section" id="categories">
@@ -1944,16 +1867,7 @@
         </div>
     </section>
 
-    <!-- AdSense Unit (Middle) -->
-    <div class="container">
-        <div class="adsense-unit fade-in">
-            <div class="adsense-label">Advertisement</div>
-            <div class="ad-placeholder large">
-                <i class="fas fa-ad"></i>
-                <p>AdSense Banner (728x90)</p>
-            </div>
-        </div>
-    </div>
+    <!-- REMOVED: AdSense Unit (Middle) -->
 
     <!-- Birthday Images -->
     <section class="section">
@@ -2020,16 +1934,7 @@
         </div>
     </section>
 
-    <!-- AdSense Unit (After Blog) -->
-    <div class="container">
-        <div class="adsense-unit fade-in">
-            <div class="adsense-label">Advertisement</div>
-            <div class="ad-placeholder large">
-                <i class="fas fa-ad"></i>
-                <p>AdSense Banner (728x90)</p>
-            </div>
-        </div>
-    </div>
+    <!-- REMOVED: AdSense Unit (After Blog) -->
 
     <!-- About Page -->
     <section class="section seo-page" id="about">
@@ -2874,7 +2779,7 @@
             }, observerOptions);
             
             // Observe elements for animation
-            document.querySelectorAll('.image-card, .blog-article-card, .adsense-unit, .category-card').forEach(el => {
+            document.querySelectorAll('.image-card, .blog-article-card, .category-card').forEach(el => {
                 el.style.opacity = '0';
                 el.style.transform = 'translateY(30px)';
                 el.style.transition = 'opacity 0.8s cubic-bezier(0.22, 0.61, 0.36, 1), transform 0.8s cubic-bezier(0.22, 0.61, 0.36, 1)';
@@ -2977,13 +2882,7 @@
                 }
             });
             
-            // Simulate Ad Loading
-            setTimeout(() => {
-                document.querySelectorAll('.ad-placeholder').forEach(ad => {
-                    ad.innerHTML = '<p>Advertisement loaded</p><small>Thank you for supporting our free service</small>';
-                    ad.style.animation = 'fadeIn 1s ease-out';
-                });
-            }, 3000);
+            // REMOVED: Simulate Ad Loading
             
             // Add animation to section titles on scroll
             const sectionTitles = document.querySelectorAll('.section-title');
