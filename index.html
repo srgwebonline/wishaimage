@@ -1,1 +1,2921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WishaImage – Beautiful Wishes Images for Every Moment | Free Greeting Cards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Download beautiful wishes images for good morning, birthdays, festivals, love quotes and daily greetings. Free & easy sharing for WhatsApp, Facebook, Instagram.">
+    <meta name="keywords" content="wishes images, good morning images, birthday wishes, festival greetings, love quotes, free greeting cards, WhatsApp images, Facebook greetings, Instagram wishes">
+    <meta name="author" content="WishaImage">
+    <meta property="og:title" content="WishaImage – Beautiful Wishes Images for Every Moment">
+    <meta property="og:description" content="Download free beautiful wishes images for all occasions. Share on WhatsApp, Facebook, Instagram instantly.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wishaimage.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://wishaimage.com">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "WishaImage",
+        "url": "https://wishaimage.com",
+        "description": "Free beautiful wishes images for every occasion",
+        "publisher": {
+            "@type": "Organization",
+            "name": "WishaImage",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://wishaimage.com/logo.png"
+            }
+        }
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎉</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        :root {
+            --primary-color: #4f46e5;
+            --primary-dark: #3730a3;
+            --secondary-color: #fbbf24;
+            --accent-color: #ec4899;
+            --light-color: #f8fafc;
+            --dark-color: #111827;
+            --gray-color: #6b7280;
+            --light-gray: #e5e7eb;
+            --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s ease;
+            --border-radius: 12px;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+            padding-top: 70px; /* Added for fixed header */
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+        
+        /* Header & Navigation - CHANGED TO FIXED */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            animation: headerSlideDown 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+        
+        @keyframes headerSlideDown {
+            from { 
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            animation: logoPulse 2s infinite;
+            text-decoration: none;
+            color: white;
+            z-index: 1001;
+            position: relative;
+        }
+        
+        /* Logo hover effect */
+        .logo:hover {
+            color: var(--secondary-color);
+            transition: var(--transition);
+        }
+        
+        @keyframes logoPulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .logo i {
+            color: var(--secondary-color);
+            animation: spinSlow 20s linear infinite;
+        }
+        
+        @keyframes spinSlow {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            padding: 0.5rem 0;
+            position: relative;
+        }
+        
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--secondary-color);
+            transition: var(--transition);
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: var(--transition);
+            z-index: 1001;
+        }
+        
+        .mobile-menu-btn:hover {
+            color: var(--secondary-color);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.85), rgba(55, 48, 163, 0.9)), url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 6rem 1rem;
+            animation: heroReveal 1.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+        
+        @keyframes heroReveal {
+            0% { 
+                opacity: 0;
+                transform: translateY(40px) scale(0.98);
+                filter: blur(5px);
+            }
+            100% { 
+                opacity: 1;
+                transform: translateY(0) scale(1);
+                filter: blur(0);
+            }
+        }
+        
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 1.5rem;
+            animation: textGlow 3s ease-in-out infinite alternate;
+        }
+        
+        @keyframes textGlow {
+            0% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); }
+            100% { text-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.3); }
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--dark-color);
+            padding: 0.9rem 2rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            margin: 0.5rem;
+            animation: fadeInUp 1s ease-out 0.5s both;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: 0.5s;
+        }
+        
+        .btn:hover::before {
+            left: 100%;
+        }
+        
+        .btn:hover {
+            background-color: #f59e0b;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+        
+        .btn-outline:hover {
+            background-color: white;
+            color: var(--primary-color);
+        }
+        
+        /* Main Content */
+        .section {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--dark-color);
+            display: inline-block;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+            animation: lineExpand 1.5s ease-out;
+        }
+        
+        @keyframes lineExpand {
+            0% { width: 0; opacity: 0; }
+            100% { width: 80px; opacity: 1; }
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            max-width: 700px;
+            margin: 1rem auto 3rem;
+            color: var(--gray-color);
+            font-size: 1.1rem;
+        }
+        
+        /* Categories Grid */
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .category-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+            position: relative;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .category-card:nth-child(2) { animation-delay: 0.2s; }
+        .category-card:nth-child(3) { animation-delay: 0.4s; }
+        .category-card:nth-child(4) { animation-delay: 0.6s; }
+        .category-card:nth-child(5) { animation-delay: 0.8s; }
+        .category-card:nth-child(6) { animation-delay: 1s; }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .category-card:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            animation-play-state: paused;
+        }
+        
+        .category-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            animation: iconPulse 2s infinite;
+        }
+        
+        @keyframes iconPulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .category-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Images Grid */
+        .images-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .image-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+            animation: cardAppear 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+        }
+        
+        @keyframes cardAppear {
+            0% { 
+                opacity: 0;
+                transform: translateY(30px) scale(0.95);
+            }
+            100% { 
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+        
+        .image-card:hover {
+            transform: translateY(-8px) rotateX(5deg);
+            box-shadow: 0 25px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .image-placeholder {
+            height: 220px;
+            background-color: var(--light-gray);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--gray-color);
+            font-size: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .image-placeholder::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            opacity: 0.7;
+            transition: opacity 0.5s ease;
+        }
+        
+        .image-card:hover .image-placeholder::before {
+            opacity: 0.9;
+        }
+        
+        .image-placeholder i {
+            z-index: 1;
+            animation: iconFloat 3s ease-in-out infinite;
+        }
+        
+        @keyframes iconFloat {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(5deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+        
+        .image-card-content {
+            padding: 1.5rem;
+        }
+        
+        .image-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .image-card p {
+            color: var(--gray-color);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+        
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(to right, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .download-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: 0.5s;
+        }
+        
+        .download-btn:hover::before {
+            left: 100%;
+        }
+        
+        .download-btn:hover {
+            transform: scale(1.05) translateY(-2px);
+            box-shadow: 0 8px 15px rgba(79, 70, 229, 0.3);
+        }
+        
+        /* AdSense Units - REMOVED FROM CSS */
+        
+        /* Blog & Articles Section */
+        .blog-articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .blog-article-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+            height: 100%;
+            animation: blogReveal 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+        }
+        
+        @keyframes blogReveal {
+            0% { 
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            100% { 
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .blog-article-card:nth-child(2) { animation-delay: 0.1s; }
+        .blog-article-card:nth-child(3) { animation-delay: 0.2s; }
+        .blog-article-card:nth-child(4) { animation-delay: 0.3s; }
+        .blog-article-card:nth-child(5) { animation-delay: 0.4s; }
+        .blog-article-card:nth-child(6) { animation-delay: 0.5s; }
+        
+        .blog-article-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        
+        .blog-article-image {
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .blog-article-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            opacity: 0.5;
+            transition: opacity 0.5s ease;
+        }
+        
+        .blog-article-card:hover .blog-article-image::before {
+            opacity: 0.8;
+        }
+        
+        .blog-article-content {
+            padding: 1.8rem;
+        }
+        
+        .blog-article-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 0.8rem;
+            font-size: 0.85rem;
+            color: var(--gray-color);
+        }
+        
+        .blog-article-category {
+            display: inline-block;
+            background: rgba(79, 70, 229, 0.1);
+            color: var(--primary-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .blog-article-title {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+            font-weight: 700;
+            line-height: 1.4;
+        }
+        
+        .blog-article-excerpt {
+            color: var(--gray-color);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+        
+        .read-more {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: var(--transition);
+            position: relative;
+        }
+        
+        .read-more::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            transition: var(--transition);
+        }
+        
+        .read-more:hover {
+            gap: 10px;
+        }
+        
+        .read-more:hover::after {
+            width: 100%;
+        }
+        
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background-color: white;
+            border-radius: var(--border-radius);
+            margin-bottom: 1rem;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+            animation: faqSlide 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+        }
+        
+        @keyframes faqSlide {
+            0% { 
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .faq-item:nth-child(2) { animation-delay: 0.1s; }
+        .faq-item:nth-child(3) { animation-delay: 0.2s; }
+        .faq-item:nth-child(4) { animation-delay: 0.3s; }
+        .faq-item:nth-child(5) { animation-delay: 0.4s; }
+        .faq-item:nth-child(6) { animation-delay: 0.5s; }
+        .faq-item:nth-child(7) { animation-delay: 0.6s; }
+        
+        .faq-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        .faq-question:hover {
+            background-color: rgba(79, 70, 229, 0.05);
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(0.22, 0.61, 0.36, 1), padding 0.3s ease;
+            color: var(--gray-color);
+            opacity: 0;
+        }
+        
+        .faq-answer.active {
+            padding-bottom: 1.5rem;
+            max-height: 500px;
+            opacity: 1;
+        }
+        
+        /* SEO Pages */
+        .seo-page {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 3rem;
+            margin: 3rem 0;
+            box-shadow: var(--card-shadow);
+            animation: pageReveal 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+        
+        @keyframes pageReveal {
+            0% { 
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            100% { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .seo-page h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark-color);
+        }
+        
+        .seo-page h2 {
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem;
+            color: var(--dark-color);
+        }
+        
+        .seo-page h3 {
+            font-size: 1.4rem;
+            margin: 1.5rem 0 0.8rem;
+            color: var(--dark-color);
+        }
+        
+        .seo-page p {
+            margin-bottom: 1rem;
+            color: var(--gray-color);
+        }
+        
+        .seo-page ul, .seo-page ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .seo-page li {
+            margin-bottom: 0.5rem;
+            color: var(--gray-color);
+        }
+        
+        .seo-page table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            animation: tableReveal 1s ease-out;
+        }
+        
+        @keyframes tableReveal {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        
+        .seo-page th, .seo-page td {
+            padding: 0.8rem;
+            text-align: left;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .seo-page th {
+            background-color: #f3f4f6;
+            font-weight: 600;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: #9ca3af;
+            padding: 4rem 0 2rem;
+            margin-top: 4rem;
+            animation: footerReveal 1s ease-out;
+        }
+        
+        @keyframes footerReveal {
+            0% { opacity: 0; transform: translateY(40px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        
+        .footer-about p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-links h3, .footer-social h3 {
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .footer-links h3::after, .footer-social h3::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background-color: var(--primary-color);
+            bottom: -8px;
+            left: 0;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links a {
+            color: #9ca3af;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: var(--primary-color);
+            padding-left: 5px;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #374151;
+            color: white;
+            border-radius: 50%;
+            transition: var(--transition);
+            animation: socialFloat 3s ease-in-out infinite;
+        }
+        
+        .social-icons a:nth-child(2) { animation-delay: 0.2s; }
+        .social-icons a:nth-child(3) { animation-delay: 0.4s; }
+        .social-icons a:nth-child(4) { animation-delay: 0.6s; }
+        
+        @keyframes socialFloat {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-5px) scale(1.1);
+            animation-play-state: paused;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #374151;
+            font-size: 0.9rem;
+        }
+        
+        .footer-bottom a {
+            color: #9ca3af;
+            margin: 0 10px;
+            transition: var(--transition);
+        }
+        
+        .footer-bottom a:hover {
+            color: var(--primary-color);
+        }
+        
+        /* Breadcrumb */
+        .breadcrumb {
+            background-color: #f3f4f6;
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+            animation: breadcrumbSlide 0.8s ease-out;
+        }
+        
+        @keyframes breadcrumbSlide {
+            0% { opacity: 0; transform: translateX(-20px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+        
+        .breadcrumb ul {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        
+        .breadcrumb li {
+            margin-right: 0.5rem;
+            color: var(--gray-color);
+        }
+        
+        .breadcrumb li:not(:last-child)::after {
+            content: '/';
+            margin-left: 0.5rem;
+        }
+        
+        .breadcrumb a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .breadcrumb a:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+        
+        /* Sidebar Layout */
+        .content-with-sidebar {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 3rem;
+            animation: contentReveal 1s ease-out;
+        }
+        
+        @keyframes contentReveal {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        
+        .main-content {
+            flex: 1;
+        }
+        
+        .sidebar {
+            width: 300px;
+        }
+        
+        .sidebar-widget {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--card-shadow);
+            animation: widgetFloat 6s ease-in-out infinite;
+        }
+        
+        @keyframes widgetFloat {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .sidebar-widget h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .sidebar-widget h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background-color: var(--primary-color);
+            animation: lineExpand 1.5s ease-out;
+        }
+        
+        .sidebar-links {
+            list-style: none;
+        }
+        
+        .sidebar-links li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .sidebar-links a {
+            color: var(--gray-color);
+            text-decoration: none;
+            transition: var(--transition);
+            display: block;
+            padding: 0.3rem 0;
+        }
+        
+        .sidebar-links a:hover {
+            color: var(--primary-color);
+            padding-left: 5px;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { 
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from { 
+                opacity: 0;
+                transform: translateY(30px) scale(0.95);
+                filter: blur(5px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0) scale(1);
+                filter: blur(0);
+            }
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+        }
+        
+        .slide-up {
+            animation: fadeInUp 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+        }
+        
+        /* Floating particles in background */
+        .floating-particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            overflow: hidden;
+        }
+        
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(79, 70, 229, 0.1);
+            animation: particleFloat 20s infinite linear;
+        }
+        
+        @keyframes particleFloat {
+            0% { transform: translateY(100vh) rotate(0deg); }
+            100% { transform: translateY(-100px) rotate(360deg); }
+        }
+        
+        /* Hover effects for all cards */
+        .card-hover-effect {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        .card-hover-effect:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Text selection color */
+        ::selection {
+            background-color: rgba(79, 70, 229, 0.3);
+            color: var(--dark-color);
+        }
+        
+        /* Scroll progress bar */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+            z-index: 1001;
+            transition: width 0.3s ease;
+        }
+        
+        /* Loading animation */
+        .loading {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* NEW: Article Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 10000;
+            overflow-y: auto;
+            padding: 2rem;
+        }
 
+        .modal-content {
+            background: white;
+            max-width: 800px;
+            margin: 2rem auto;
+            border-radius: var(--border-radius);
+            padding: 3rem;
+            position: relative;
+            animation: modalFadeIn 0.4s ease;
+        }
+
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            color: #999;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .close-modal:hover {
+            color: var(--dark-color);
+        }
+        
+        /* Toast Notification */
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #10b981;
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            z-index: 10000;
+            display: none;
+            align-items: center;
+            gap: 12px;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(100px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        /* Mobile Responsive Styles - FIXED */
+        @media (max-width: 1200px) {
+            .container {
+                padding: 0 30px;
+            }
+            
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .section {
+                padding: 4rem 0;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .content-with-sidebar {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .sidebar {
+                width: 100%;
+                margin-top: 2rem;
+            }
+            
+            .nav-links {
+                gap: 1rem;
+            }
+            
+            .blog-articles-grid {
+                grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+                max-width: 90%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                width: 100%;
+                background-color: rgba(55, 48, 163, 0.98);
+                backdrop-filter: blur(10px);
+                flex-direction: column;
+                padding: 2rem;
+                gap: 1.5rem;
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+                z-index: 999;
+            }
+            
+            .nav-links.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero {
+                padding: 4rem 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+                line-height: 1.2;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+            
+            .btn {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.9rem;
+                margin: 0.3rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .section-subtitle {
+                font-size: 1rem;
+                padding: 0 1rem;
+            }
+            
+            .seo-page {
+                padding: 2rem;
+            }
+            
+            .seo-page h1 {
+                font-size: 2rem;
+            }
+            
+            .seo-page h2 {
+                font-size: 1.5rem;
+            }
+            
+            .modal-content {
+                padding: 2rem 1.5rem;
+                margin: 1rem auto;
+                width: 95%;
+            }
+            
+            .categories-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 1.5rem;
+            }
+            
+            .images-grid, .blog-articles-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .category-card {
+                height: 180px;
+                padding: 1.5rem;
+            }
+            
+            .category-icon {
+                font-size: 2.5rem;
+            }
+            
+            .category-card h3 {
+                font-size: 1.2rem;
+            }
+            
+            .image-placeholder {
+                height: 180px;
+            }
+            
+            .image-card h3 {
+                font-size: 1.1rem;
+            }
+            
+            .blog-article-image {
+                height: 180px;
+            }
+            
+            .blog-article-title {
+                font-size: 1.2rem;
+            }
+            
+            .blog-article-excerpt {
+                font-size: 0.9rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1.5rem;
+            }
+            
+            .cta-buttons {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                align-items: center;
+            }
+            
+            .cta-buttons .btn {
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            body {
+                padding-top: 60px;
+            }
+            
+            header {
+                padding: 0.8rem 0;
+            }
+            
+            .container {
+                padding: 0 20px;
+            }
+            
+            .hero {
+                padding: 3rem 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .section {
+                padding: 3rem 0;
+            }
+            
+            .section-title h2 {
+                font-size: 1.6rem;
+            }
+            
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .category-card {
+                height: 160px;
+            }
+            
+            .seo-page {
+                padding: 1.5rem;
+            }
+            
+            .seo-page h1 {
+                font-size: 1.8rem;
+            }
+            
+            .seo-page h2 {
+                font-size: 1.3rem;
+            }
+            
+            .seo-page p, .seo-page li {
+                font-size: 0.95rem;
+            }
+            
+            .breadcrumb ul {
+                font-size: 0.9rem;
+            }
+            
+            .faq-question {
+                padding: 1.2rem;
+                font-size: 0.95rem;
+            }
+            
+            .faq-answer {
+                font-size: 0.9rem;
+            }
+            
+            .download-btn {
+                width: 100%;
+                justify-content: center;
+                padding: 0.7rem 1.5rem;
+            }
+            
+            .modal-content {
+                padding: 1.5rem;
+                margin: 0.5rem auto;
+                width: 98%;
+            }
+            
+            .modal-content h1 {
+                font-size: 1.5rem;
+            }
+            
+            .modal-content h2 {
+                font-size: 1.3rem;
+            }
+            
+            .modal-content h3 {
+                font-size: 1.1rem;
+            }
+            
+            .toast {
+                bottom: 20px;
+                right: 20px;
+                left: 20px;
+                padding: 0.8rem 1.2rem;
+                font-size: 0.9rem;
+            }
+            
+            .footer-bottom {
+                font-size: 0.8rem;
+            }
+            
+            .footer-bottom p {
+                line-height: 1.5;
+            }
+            
+            .blog-article-meta {
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+            
+            .blog-article-content {
+                padding: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 375px) {
+            body {
+                padding-top: 55px;
+            }
+            
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+            
+            .hero p {
+                font-size: 0.95rem;
+            }
+            
+            .btn {
+                padding: 0.7rem 1.2rem;
+                font-size: 0.85rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.4rem;
+            }
+            
+            .logo {
+                font-size: 1.5rem;
+            }
+            
+            .nav-links {
+                padding: 1.5rem;
+            }
+            
+            .nav-links a {
+                font-size: 0.9rem;
+            }
+            
+            .category-card h3 {
+                font-size: 1.1rem;
+            }
+            
+            .category-icon {
+                font-size: 2rem;
+            }
+            
+            .image-card h3 {
+                font-size: 1rem;
+            }
+            
+            .image-card p {
+                font-size: 0.85rem;
+            }
+            
+            .blog-article-title {
+                font-size: 1.1rem;
+            }
+            
+            .blog-article-excerpt {
+                font-size: 0.85rem;
+            }
+        }
+        
+        /* Tablet Landscape Optimization */
+        @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+            .hero {
+                padding: 4rem 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .categories-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .images-grid, .blog-articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .content-with-sidebar {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* High-resolution mobile devices */
+        @media (min-width: 576px) and (max-width: 768px) {
+            .categories-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .images-grid, .blog-articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        /* Ensure images don't overflow on mobile */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Fix for iOS Safari */
+        @supports (-webkit-touch-callout: none) {
+            .hero {
+                background-attachment: scroll;
+            }
+        }
+        
+        /* Improve tap targets on mobile */
+        @media (max-width: 768px) {
+            .download-btn,
+            .btn,
+            .nav-links a,
+            .read-more,
+            .faq-question {
+                min-height: 44px;
+                min-width: 44px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .mobile-menu-btn {
+                min-height: 44px;
+                min-width: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .logo {
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+            }
+        }
+        
+        /* Prevent horizontal scrolling */
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Fix for anchor links with fixed header */
+        section {
+            scroll-margin-top: 80px;
+        }
+        
+        @media (max-width: 576px) {
+            section {
+                scroll-margin-top: 60px;
+            }
+        }
+        
+        /* Fix for iOS smooth scrolling issues */
+        @media (max-width: 768px) {
+            html {
+                -webkit-overflow-scrolling: touch;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toast-message">Image downloaded successfully!</span>
+    </div>
+
+    <!-- Article Modal -->
+    <div class="modal" id="article-modal">
+        <div class="modal-content">
+            <button class="close-modal" id="close-modal">&times;</button>
+            <div id="modal-article-content"></div>
+        </div>
+    </div>
+    
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+    
+    <!-- Loading Animation -->
+    <div class="loading" id="loading">
+        <div class="loading-spinner"></div>
+        <p>Loading beautiful wishes...</p>
+    </div>
+    
+    <!-- Floating Background Particles -->
+    <div class="floating-particles" id="particles"></div>
+    
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container nav-container">
+            <!-- Logo is now a clickable link to home -->
+            <a href="#home" class="logo">
+                <i class="fas fa-gift"></i>
+                WishaImage
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#blog-articles">Blog & Articles</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Beautiful Wishes Images for Every Moment</h1>
+            <p>Download and share beautiful wishes images for good morning, birthdays, festivals, love quotes and daily greetings. Free & optimized for WhatsApp, Facebook, Instagram.</p>
+            <div class="cta-buttons">
+                <a href="#categories" class="btn">Explore Categories</a>
+                <a href="#blog-articles" class="btn btn-outline">Blog & Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- REMOVED: AdSense Unit (Top) -->
+
+    <!-- Popular Categories -->
+    <section class="section" id="categories">
+        <div class="container">
+            <div class="section-title">
+                <h2>Popular Categories</h2>
+            </div>
+            <p class="section-subtitle">Browse our extensive collection of beautifully designed wishes images for every occasion and mood.</p>
+            
+            <div class="categories-grid">
+                <div class="category-card slide-up" style="animation-delay: 0.1s">
+                    <div class="category-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3>Good Morning</h3>
+                    <p>Start the day with positivity</p>
+                </div>
+                
+                <div class="category-card slide-up" style="animation-delay: 0.2s">
+                    <div class="category-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3>Good Night</h3>
+                    <p>Peaceful wishes for rest</p>
+                </div>
+                
+                <div class="category-card slide-up" style="animation-delay: 0.3s">
+                    <div class="category-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Birthday Wishes</h3>
+                    <p>Make celebrations special</p>
+                </div>
+                
+                <div class="category-card slide-up" style="animation-delay: 0.4s">
+                    <div class="category-icon">
+                        <i class="fas fa-holly-berry"></i>
+                    </div>
+                    <h3>Festival Wishes</h3>
+                    <p>Celebrate every occasion</p>
+                </div>
+                
+                <div class="category-card slide-up" style="animation-delay: 0.5s">
+                    <div class="category-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Love Wishes</h3>
+                    <p>Express your feelings</p>
+                </div>
+                
+                <div class="category-card slide-up" style="animation-delay: 0.6s">
+                    <div class="category-icon">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <h3>Quotes Images</h3>
+                    <p>Inspirational & motivational</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Good Morning Images -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Good Morning Images</h2>
+            </div>
+            <p class="section-subtitle">Start your day with beautiful good morning images that spread positivity and happiness. Download free HD good morning wishes images for WhatsApp and social sharing.</p>
+            
+            <div class="images-grid">
+                <div class="image-card fade-in" style="animation-delay: 0.1s">
+                    <div class="image-placeholder">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="image-card-content">
+                        <h3>Good Morning with Positive Quote</h3>
+                        <p>Beautiful good morning wishes image perfect for sharing positivity and happiness.</p>
+                        <a href="#" class="download-btn">
+                            <i class="fas fa-download"></i> Download HD Image
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="image-card fade-in" style="animation-delay: 0.2s">
+                    <div class="image-placeholder">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <div class="image-card-content">
+                        <h3>Good Morning for WhatsApp</h3>
+                        <p>Download and share this good morning image on WhatsApp to brighten someone's day.</p>
+                        <a href="#" class="download-btn">
+                            <i class="fas fa-download"></i> Download HD Image
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="image-card fade-in" style="animation-delay: 0.3s">
+                    <div class="image-placeholder">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <div class="image-card-content">
+                        <h3>Inspirational Morning Quote</h3>
+                        <p>Start your day with motivation and inspiration with this beautiful morning image.</p>
+                        <a href="#" class="download-btn">
+                            <i class="fas fa-download"></i> Download HD Image
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REMOVED: AdSense Unit (Middle) -->
+
+    <!-- Birthday Images -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Birthday Wishes Images</h2>
+            </div>
+            <p class="section-subtitle">Make birthdays special by sharing beautiful birthday wishes images with friends and family. Perfect for WhatsApp, Facebook, and Instagram stories.</p>
+            
+            <div class="images-grid">
+                <div class="image-card fade-in" style="animation-delay: 0.1s">
+                    <div class="image-placeholder">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <div class="image-card-content">
+                        <h3>Happy Birthday Wishes</h3>
+                        <p>Beautiful birthday cake image with warm wishes for your loved ones.</p>
+                        <a href="#" class="download-btn">
+                            <i class="fas fa-download"></i> Download HD Image
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="image-card fade-in" style="animation-delay: 0.2s">
+                    <div class="image-placeholder">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <div class="image-card-content">
+                        <h3>Birthday Celebration</h3>
+                        <p>Colorful birthday wishes image perfect for sharing on social media.</p>
+                        <a href="#" class="download-btn">
+                            <i class="fas fa-download"></i> Download HD Image
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="image-card fade-in" style="animation-delay: 0.3s">
+                    <div class="image-placeholder">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <div class="image-card-content">
+                        <h3>Funny Birthday Card</h3>
+                        <p>Humorous birthday wishes to bring a smile to the celebrant's face.</p>
+                        <a href="#" class="download-btn">
+                            <i class="fas fa-download"></i> Download HD Image
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Blog & Articles Section (Merged) -->
+    <section class="section" id="blog-articles">
+        <div class="container">
+            <div class="section-title">
+                <h2>Blog & Articles</h2>
+            </div>
+            <p class="section-subtitle">Read our latest blog posts and expert articles on creating, selecting, and sharing the perfect wishes images for every occasion.</p>
+            
+            <div class="blog-articles-grid" id="blog-articles-grid">
+                <!-- Blog and articles will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- REMOVED: AdSense Unit (After Blog) -->
+
+    <!-- About Page -->
+    <section class="section seo-page" id="about">
+        <div class="container">
+            <h1>About WishaImage</h1>
+            <p>Welcome to WishaImage, your premier destination for beautiful, high-quality wishes images for every occasion. Founded in 2026, we've grown to become one of the largest collections of free wishes images on the internet.</p>
+            
+            <h2>Our Mission</h2>
+            <p>Our mission is simple: to help people express their feelings and share beautiful moments with loved ones through stunning visual greetings. In today's digital world, a thoughtful image can convey emotions that words alone sometimes cannot.</p>
+            
+            <h2>What We Offer</h2>
+            <p>WishaImage provides thousands of professionally designed wishes images across multiple categories:</p>
+            <ul>
+                <li><strong>Daily Greetings:</strong> Good morning, good night, and daily inspirational images</li>
+                <li><strong>Special Occasions:</strong> Birthday, anniversary, and festival wishes</li>
+                <li><strong>Emotional Expressions:</strong> Love, friendship, thank you, and apology images</li>
+                <li><strong>Motivational Content:</strong> Quotes and inspirational messages for personal growth</li>
+            </ul>
+            
+            <h2>Our Commitment</h2>
+            <p>We are committed to providing 100% free, high-resolution images that are optimized for all social media platforms. Our team of designers works tirelessly to create new content daily, ensuring our collection stays fresh and relevant.</p>
+            
+            <p>All images are available for personal use and can be shared freely on WhatsApp, Facebook, Instagram, Twitter, and other social platforms. We believe in spreading positivity and happiness through beautiful visual content.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Are all images on WishaImage free to download?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, all wishes images on WishaImage are completely free to download and share. We believe in spreading happiness without barriers. You can use our images for personal sharing on social media, messaging apps, or for personal greetings.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can I use these images on WhatsApp and other social media?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely! All our images are optimized for WhatsApp, Facebook, Instagram, Twitter, and other popular social media platforms. They are created in ideal dimensions and resolutions for each platform to ensure they look perfect when shared.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Is registration required to download images?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        No registration is required. You can browse, preview, and download any image on our website without creating an account or providing any personal information. We respect your privacy and believe in a seamless user experience.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How often do you add new images?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        We add new images daily! Our team of designers creates fresh content every day across all categories. We also create special collections for upcoming festivals and holidays in advance, so you'll always find relevant wishes images for any occasion.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can I request a specific type of wishes image?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! We welcome suggestions from our users. If you're looking for a specific type of wishes image that you don't see on our website, please contact us with your request. We'll do our best to create it and add it to our collection.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section class="section seo-page" id="contact">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Whether you have suggestions for new image categories, feedback on our website, or partnership inquiries, please don't hesitate to reach out.</p>
+            
+            <h2>Get In Touch</h2>
+            <p>For general inquiries, suggestions, or feedback:</p>
+            <p><strong>Email:</strong> contact@wishaimage.com</p>
+            <p><strong>Business Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM (EST)</p>
+            
+            <h2>Content Submissions</h2>
+            <p>Are you a designer or photographer interested in contributing to WishaImage? We're always looking for talented creators to expand our collection.</p>
+            <p><strong>Email:</strong> submissions@wishaimage.com</p>
+            
+            <h2>Press & Media</h2>
+            <p>For media inquiries, interviews, or press-related questions:</p>
+            <p><strong>Email:</strong> press@wishaimage.com</p>
+            
+            <h2>Follow Us</h2>
+            <p>Stay updated with our latest images and announcements by following us on social media:</p>
+            <div class="social-icons" style="justify-content: flex-start; margin-top: 1rem;">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-gift"></i> WishaImage
+                    </div>
+                    <p>Your premier destination for beautiful wishes images for every occasion. Spread happiness with our free, high-quality greeting images.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#blog-articles">Blog & Articles</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="term-condition.html">Terms of Service</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                        <li><a href="dmca.html">DMCA</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-sun"></i> Good Morning</a></li>
+                        <li><a href="#"><i class="fas fa-moon"></i> Good Night</a></li>
+                        <li><a href="#"><i class="fas fa-birthday-cake"></i> Birthday</a></li>
+                        <li><a href="#"><i class="fas fa-holly-berry"></i> Festival</a></li>
+                        <li><a href="#"><i class="fas fa-heart"></i> Love</a></li>
+                        <li><a href="#"><i class="fas fa-quote-right"></i> Quotes</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>
+                    <a href="privacy-policy.html">Privacy Policy</a> |
+                    <a href="term-condition.html">Terms</a> |
+                    <a href="disclaimer.html">Disclaimer</a> |
+                    <a href="dmca.html">DMCA</a> |
+                    <a href="#contact">Contact</a> |
+                    <a href="sitemap.html">Sitemap</a>
+                </p>
+                <p>© 2026 WishaImage. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color: #ec4899;"></i> for spreading happiness</p>
+                <p style="margin-top: 10px; font-size: 0.8rem;">This website uses cookies to enhance user experience. By using our site, you consent to our use of cookies.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Combined Blog Posts and Articles Data
+        const blogArticlesData = [
+            {
+                id: 1,
+                title: "How to Create Beautiful Wishes Images in 2026",
+                excerpt: "Learn the latest design trends and tools to create stunning wishes images that stand out on social media.",
+                category: "Design Tips",
+                type: "blog",
+                date: "May 15, 2026",
+                readTime: "5 min read",
+                fullContent: `<h2>How to Create Beautiful Wishes Images in 2026</h2>
+                <p>Creating beautiful wishes images has never been easier with today's design tools and trends. Here's a comprehensive guide to help you create stunning images that will make your greetings stand out.</p>
+                
+                <h3>1. Choose the Right Design Tools</h3>
+                <p>In 2026, several user-friendly design tools can help you create professional-looking wishes images:</p>
+                <ul>
+                    <li><strong>Canva:</strong> Perfect for beginners with thousands of templates</li>
+                    <li><strong>Adobe Express:</strong> Professional tools with AI-powered features</li>
+                    <li><strong>Figma:</strong> Great for collaborative design projects</li>
+                    <li><strong>PicsArt:</strong> Mobile-friendly with powerful editing features</li>
+                </ul>
+                
+                <h3>2. Follow Current Design Trends</h3>
+                <p>Stay updated with these 2026 design trends:</p>
+                <ul>
+                    <li><strong>Minimalist Designs:</strong> Clean, simple layouts with plenty of white space</li>
+                    <li><strong>Gradient Colors:</strong> Smooth color transitions that add depth</li>
+                    <li><strong>3D Elements:</strong> Subtle 3D effects for visual interest</li>
+                    <li><strong>Hand-drawn Elements:</strong> Personal, authentic touches</li>
+                    <li><strong>Neon and Glow Effects:</strong> For eye-catching evening wishes</li>
+                </ul>
+                
+                <h3>3. Optimize for Different Platforms</h3>
+                <p>Each social platform has ideal dimensions:</p>
+                <ul>
+                    <li><strong>Instagram:</strong> 1080x1080px for posts, 1080x1920px for stories</li>
+                    <li><strong>Facebook:</strong> 1200x630px for posts, 1080x1080px for profile</li>
+                    <li><strong>WhatsApp:</strong> 800x800px minimum for clear display</li>
+                    <li><strong>Twitter:</strong> 1200x675px for optimal engagement</li>
+                </ul>
+                
+                <h3>4. Add Personal Touches</h3>
+                <p>Personalization makes your wishes more meaningful:</p>
+                <ul>
+                    <li>Include the recipient's name</li>
+                    <li>Use their favorite colors</li>
+                    <li>Reference shared memories or inside jokes</li>
+                    <li>Choose images that match their personality</li>
+                </ul>
+                
+                <p>By following these guidelines, you can create wishes images that are not only beautiful but also perfectly tailored to your recipients and the platforms where you'll share them.</p>`
+            },
+            {
+                id: 2,
+                title: "Best Practices for Sharing Wishes on WhatsApp",
+                excerpt: "Optimize your wishes images for WhatsApp to ensure they look perfect when shared with friends and family.",
+                category: "Social Media",
+                type: "blog",
+                date: "May 10, 2026",
+                readTime: "4 min read",
+                fullContent: `<h2>Best Practices for Sharing Wishes on WhatsApp</h2>
+                <p>WhatsApp is the most popular messaging platform for sharing wishes images. Follow these best practices to ensure your images look perfect every time.</p>
+                
+                <h3>1. Optimal Image Dimensions</h3>
+                <p>For crystal-clear display on WhatsApp:</p>
+                <ul>
+                    <li><strong>Standard Images:</strong> 800x800px to 1600x1600px</li>
+                    <li><strong>Story Images:</strong> 1080x1920px (9:16 ratio)</li>
+                    <li><strong>Status Images:</strong> 1080x1920px for full-screen display</li>
+                    <li><strong>Group Sharing:</strong> 1200x1200px for better visibility</li>
+                </ul>
+                
+                <h3>2. File Size Considerations</h3>
+                <p>Balance quality with file size:</p>
+                <ul>
+                    <li><strong>Compressed Size:</strong> Under 1MB for quick sending</li>
+                    <li><strong>High Quality:</strong> 1-5MB for important occasions</li>
+                    <li><strong>Format:</strong> JPEG for photos, PNG for text-heavy images</li>
+                    <li><strong>Compression:</strong> Use 80-90% quality to reduce size</li>
+                </ul>
+                
+                <h3>3. Text Placement Strategy</h3>
+                <p>Ensure text remains readable:</p>
+                <ul>
+                    <li>Keep important text in the center third of the image</li>
+                    <li>Use high contrast between text and background</li>
+                    <li>Avoid placing text near edges (may get cut off)</li>
+                    <li>Use minimum 24px font size for readability</li>
+                </ul>
+                
+                <h3>4. Timing Your Wishes</h3>
+                <p>Maximize impact with perfect timing:</p>
+                <ul>
+                    <li><strong>Morning Wishes:</strong> Send between 7-9 AM</li>
+                    <li><strong>Birthday Wishes:</strong> Send at midnight or early morning</li>
+                    <li><strong>Festival Wishes:</strong> Send on the eve or early morning</li>
+                    <li><strong>Thank You Wishes:</strong> Send immediately after the event</li>
+                </ul>
+                
+                <h3>5. Personalization Tips</h3>
+                <p>Make your wishes stand out:</p>
+                <ul>
+                    <li>Address recipients by name in the message</li>
+                    <li>Reference recent events in their life</li>
+                    <li>Use inside jokes or shared memories</li>
+                    <li>Add voice messages alongside images</li>
+                </ul>
+                
+                <p>By following these WhatsApp-specific guidelines, you'll ensure your wishes images always look their best and make the maximum impact on your recipients.</p>`
+            },
+            {
+                id: 3,
+                title: "Top 10 Wishes Image Trends for 2026",
+                excerpt: "Discover the most popular wishes image styles and themes that are trending this year.",
+                category: "Trends",
+                type: "blog",
+                date: "May 5, 2026",
+                readTime: "6 min read",
+                fullContent: `<h2>Top 10 Wishes Image Trends for 2026</h2>
+                <p>Stay ahead of the curve with these trending wishes image styles that are dominating social media in 2026.</p>
+                
+                <h3>1. AI-Generated Art</h3>
+                <p>Artificial intelligence is transforming wishes images:</p>
+                <ul>
+                    <li>Unique, never-before-seen designs</li>
+                    <li>Personalized based on recipient's interests</li>
+                    <li>Faster creation process</li>
+                    <li>Endless style variations</li>
+                </ul>
+                
+                <h3>2. Augmented Reality (AR) Elements</h3>
+                <p>Interactive wishes are gaining popularity:</p>
+                <ul>
+                    <li>3D animations that come to life</li>
+                    <li>Interactive elements users can engage with</li>
+                    <li>AR filters for personalized experiences</li>
+                    <li>Virtual greeting cards</li>
+                </ul>
+                
+                <h3>3. Sustainable and Eco-Friendly Designs</h3>
+                <p>Green consciousness influences design:</p>
+                <ul>
+                    <li>Nature-inspired color palettes</li>
+                    <li>Eco-friendly messaging</li>
+                    <li>Minimalist designs using less "digital ink"</li>
+                    <li>Plant and wildlife themes</li>
+                </ul>
+                
+                <h3>4. Retro and Vintage Revival</h3>
+                <p>Nostalgic designs make a comeback:</p>
+                <ul>
+                    <li>80s and 90s color schemes</li>
+                    <li>Pixel art and retro fonts</li>
+                    <li>Vintage photography effects</li>
+                    <li>Classic greeting card styles</li>
+                </ul>
+                
+                <h3>5. Micro-Animation</h3>
+                <p>Subtle movement adds life to images:</p>
+                <ul>
+                    <li>Fluttering butterflies or falling leaves</li>
+                    <li>Gentle text animations</li>
+                    <li>Subtty glowing effects</li>
+                    <li>Breathing animations for calm wishes</li>
+                </ul>
+                
+                <h3>6. Personalized Avatars</h3>
+                <p>Custom characters for unique wishes:</p>
+                <ul>
+                    <li>Avatar-based birthday cards</li>
+                    <li>Custom character illustrations</li>
+                    <li>Family avatar groups</li>
+                    <li>Pet avatars for animal lovers</li>
+                </ul>
+                
+                <h3>7. Dark Mode Designs</h3>
+                <p>Optimized for modern device displays:</p>
+                <ul>
+                    <li>Dark background with bright text</li>
+                    <li>OLED-friendly pure black designs</li>
+                    <li>Reduced eye strain for evening wishes</li>
+                    <li>Modern, sophisticated look</li>
+                </ul>
+                
+                <h3>8. Cultural Fusion</h3>
+                <p>Blending traditions for global appeal:</p>
+                <ul>
+                    <li>Combining multiple cultural elements</li>
+                    <li>Multilingual wishes</li>
+                    <li>Global holiday celebrations</li>
+                    <li>Cross-cultural design patterns</li>
+                </ul>
+                
+                <h3>9. Sound-Integrated Images</h3>
+                <p>Multisensory greeting experiences:</p>
+                <ul>
+                    <li>Images with embedded audio messages</li>
+                    <li>Background music matching the theme</li>
+                    <li>Sound effects for interactive elements</li>
+                    <li>Voice-over wishes</li>
+                </ul>
+                
+                <h3>10. Accessible Design</h3>
+                <p>Inclusive wishes for everyone:</p>
+                <ul>
+                    <li>High contrast for visually impaired</li>
+                    <li>Alt text descriptions</li>
+                    <li>Simple layouts for cognitive accessibility</li>
+                    <li>Color-blind friendly palettes</li>
+                </ul>
+                
+                <p>These trends represent the cutting edge of wishes image design in 2026. By incorporating these elements, you can create wishes that feel fresh, modern, and deeply engaging.</p>`
+            },
+            {
+                id: 4,
+                title: "How to Choose the Perfect Birthday Wish Image",
+                excerpt: "Learn the art of selecting birthday wishes that truly resonate with the recipient's personality.",
+                category: "Birthday",
+                type: "article",
+                date: "April 28, 2026",
+                readTime: "5 min read",
+                fullContent: `<h2>How to Choose the Perfect Birthday Wish Image</h2>
+                <p>Choosing the right birthday wish image can make all the difference in how your message is received. Here are some expert tips for selecting the perfect image for any birthday celebration.</p>
+                
+                <h3>1. Consider the Recipient's Personality</h3>
+                <p>The most important factor is matching the image to the recipient:</p>
+                <ul>
+                    <li><strong>For humorous friends:</strong> Funny cartoons or meme-style images</li>
+                    <li><strong>For family members:</strong> Elegant, heartfelt designs with family themes</li>
+                    <li><strong>For colleagues:</strong> Professional yet warm designs</li>
+                    <li><strong>For children:</strong> Bright, colorful cartoon characters</li>
+                    <li><strong>For romantic partners:</strong> Intimate, loving designs with personal touches</li>
+                </ul>
+                
+                <h3>2. Age-Appropriate Selection</h3>
+                <p>Different ages call for different styles:</p>
+                <ul>
+                    <li><strong>Kids (1-12):</strong> Animated characters, bright colors, simple messages</li>
+                    <li><strong>Teens (13-19):</strong> Trendy designs, social media-friendly, cool fonts</li>
+                    <li><strong>Young Adults (20-35):</strong> Modern designs, motivational messages, stylish layouts</li>
+                    <li><strong>Middle Age (36-60):</strong> Elegant designs, meaningful quotes, sophisticated colors</li>
+                    <li><strong>Seniors (60+):</strong> Classic designs, larger text, traditional motifs</li>
+                </ul>
+                
+                <h3>3. Match the Color Scheme</h3>
+                <p>Colors evoke specific emotions:</p>
+                <ul>
+                    <li><strong>Red:</strong> Energy, love, excitement</li>
+                    <li><strong>Blue:</strong> Calm, trust, sophistication</li>
+                    <li><strong>Yellow:</strong> Happiness, optimism, warmth</li>
+                    <li><strong>Green:</strong> Growth, harmony, nature</li>
+                    <li><strong>Purple:</strong> Luxury, creativity, wisdom</li>
+                    <li><strong>Gold:</strong> Celebration, achievement, luxury</li>
+                </ul>
+                
+                <h3>4. Quality Matters</h3>
+                <p>Always choose high-quality images:</p>
+                <ul>
+                    <li>High resolution (minimum 800x800px)</li>
+                    <li>Clear, readable text</li>
+                    <li>Professional design elements</li>
+                    <li>Appropriate file format (JPEG for photos, PNG for text)</li>
+                </ul>
+                
+                <h3>5. Timing and Delivery</h3>
+                <p>When and how you send matters:</p>
+                <ul>
+                    <li>Send at midnight for maximum surprise</li>
+                    <li>Consider time zones for international friends</li>
+                    <li>Use the recipient's preferred platform</li>
+                    <li>Add a personal message along with the image</li>
+                </ul>
+                
+                <p>By following these guidelines, you can ensure your birthday wishes always hit the right note and create memorable moments for your loved ones.</p>`
+            },
+            {
+                id: 5,
+                title: "Festival Wishes: Cultural Sensitivity Guide",
+                excerpt: "A comprehensive guide to selecting festival wishes that respect cultural traditions.",
+                category: "Festival",
+                type: "article",
+                date: "April 22, 2026",
+                readTime: "6 min read",
+                fullContent: `<h2>Festival Wishes: Cultural Sensitivity Guide</h2>
+                <p>When sending festival wishes, especially for cultural or religious celebrations, sensitivity and appropriateness are key to showing respect and building connections.</p>
+                
+                <h3>1. Major Festivals and Appropriate Imagery</h3>
+                
+                <h4>Diwali (Festival of Lights)</h4>
+                <ul>
+                    <li><strong>Appropriate:</strong> Diyas (oil lamps), rangoli, fireworks, Lakshmi images</li>
+                    <li><strong>Colors:</strong> Gold, orange, yellow, red</li>
+                    <li><strong>Messages:</strong> "Happy Diwali", "Shubh Deepavali"</li>
+                    <li><strong>Avoid:</strong> Images with feet showing (considered disrespectful)</li>
+                </ul>
+                
+                <h4>Christmas</h4>
+                <ul>
+                    <li><strong>Appropriate:</strong> Christmas trees, stars, Santa, nativity scenes</li>
+                    <li><strong>Colors:</strong> Red, green, gold, white</li>
+                    <li><strong>Messages:</strong> "Merry Christmas", "Season's Greetings"</li>
+                    <li><strong>Note:</strong> Some prefer religious images, others secular</li>
+                </ul>
+                
+                <h4>Eid</h4>
+                <ul>
+                    <li><strong>Appropriate:</strong> Crescent moon, stars, mosque silhouettes</li>
+                    <li><strong>Colors:</strong> Green, white, gold</li>
+                    <li><strong>Messages:</strong> "Eid Mubarak", "Blessed Eid"</li>
+                    <li><strong>Avoid:</strong> Images with faces (in conservative traditions)</li>
+                </ul>
+                
+                <h4>Chinese New Year</h4>
+                <ul>
+                    <li><strong>Appropriate:</strong> Red lanterns, dragons, money envelopes</li>
+                    <li><strong>Colors:</strong> Red, gold, yellow</li>
+                    <li><strong>Messages:</strong> "Happy New Year", "Gong Xi Fa Cai"</li>
+                    <li><strong>Note:</strong> Animal of the year changes annually</li>
+                </ul>
+                
+                <h3>2. Research Before Sending</h3>
+                <p>Essential steps for cultural sensitivity:</p>
+                <ul>
+                    <li>Learn about the festival's significance</li>
+                    <li>Understand appropriate greetings in local language</li>
+                    <li>Research color symbolism</li>
+                    <li>Know timing (some festivals last multiple days)</li>
+                    <li>Understand dietary restrictions if including in message</li>
+                </ul>
+                
+                <h3>3. Inclusive Language</h3>
+                <p>Use language that respects all traditions:</p>
+                <ul>
+                    <li>"Wishing you joy this festival season"</li>
+                    <li>"May your celebrations be filled with happiness"</li>
+                    <li>"Thinking of you during this special time"</li>
+                    <li>"Warm wishes for your celebrations"</li>
+                </ul>
+                
+                <h3>4. Digital Etiquette</h3>
+                <p>Modern considerations for digital wishes:</p>
+                <ul>
+                    <li>Check if festival has specific timing for greetings</li>
+                    <li>Use appropriate hashtags if sharing on social media</li>
+                    <li>Consider time zones for international contacts</li>
+                    <li>Respect if someone prefers not to celebrate publicly</li>
+                </ul>
+                
+                <h3>5. Common Mistakes to Avoid</h3>
+                <ul>
+                    <li>Mixing symbols from different traditions</li>
+                    <li>Using stereotypes or caricatures</li>
+                    <li>Sending at inappropriate times</li>
+                    <li>Assuming everyone celebrates the same way</li>
+                    <li>Forgetting to learn correct pronunciation of greetings</li>
+                </ul>
+                
+                <p>By being culturally sensitive in your festival wishes, you show respect for diverse traditions and build stronger, more meaningful connections with people from all backgrounds.</p>`
+            },
+            {
+                id: 6,
+                title: "Creating Custom Wishes with AI: Complete Guide",
+                excerpt: "Exploring the benefits and best practices for AI-generated wishes and images.",
+                category: "Technology",
+                type: "article",
+                date: "April 18, 2026",
+                readTime: "7 min read",
+                fullContent: `<h2>Creating Custom Wishes with AI: Complete Guide</h2>
+                <p>Artificial Intelligence has revolutionized how we create and personalize wishes. This guide covers everything you need to know about using AI for perfect wishes every time.</p>
+                
+                <h3>1. How AI Wish Generators Work</h3>
+                <p>Modern AI systems use several technologies:</p>
+                <ul>
+                    <li><strong>Natural Language Processing (NLP):</strong> Understands context and emotion</li>
+                    <li><strong>Machine Learning:</strong> Learns from millions of existing wishes</li>
+                    <li><strong>Generative AI:</strong> Creates new, unique content</li>
+                    <li><strong>Style Transfer:</strong> Applies specific writing styles</li>
+                    <li><strong>Personalization Algorithms:</strong> Tailors content to recipients</li>
+                </ul>
+                
+                <h3>2. Top AI Tools for Wishes</h3>
+                
+                <h4>For Text Wishes:</h4>
+                <ul>
+                    <li><strong>ChatGPT:</strong> Versatile, understands context well</li>
+                    <li><strong>Claude:</strong> Excellent for longer, more thoughtful messages</li>
+                    <li><strong>Google Bard:</strong> Great for fact-checked content</li>
+                    <li><strong>Jasper:</strong> Specialized for marketing-style wishes</li>
+                </ul>
+                
+                <h4>For Image Creation:</h4>
+                <ul>
+                    <li><strong>DALL-E 3:</strong> Creates detailed, realistic images</li>
+                    <li><strong>Midjourney:</strong> Artistic, stylized images</li>
+                    <li><strong>Stable Diffusion:</strong> Open-source, highly customizable</li>
+                    <li><strong>Canva AI:</strong> User-friendly with templates</li>
+                </ul>
+                
+                <h3>3. Effective Prompt Writing</h3>
+                <p>Get better results with specific prompts:</p>
+                
+                <h4>Basic Structure:</h4>
+                <ul>
+                    <li>"Create a [occasion] wish for [recipient]"</li>
+                    <li>"Generate [number] birthday messages for [relationship]"</li>
+                    <li>"Design an image showing [elements] for [occasion]"</li>
+                </ul>
+                
+                <h4>Advanced Prompts:</h4>
+                <ul>
+                    <li>"Write a humorous birthday message for a 30-year-old friend who loves hiking"</li>
+                    <li>"Create a romantic anniversary wish in the style of Shakespeare"</li>
+                    <li>"Generate a Diwali greeting image with traditional motifs in modern style"</li>
+                    <li>"Write a get-well message that's encouraging but not overly optimistic"</li>
+                </ul>
+                
+                <h3>4. Personalization Techniques</h3>
+                <p>Make AI output feel genuinely personal:</p>
+                <ul>
+                    <li><strong>Add Specific Details:</strong> Include names, shared memories, inside jokes</li>
+                    <li><strong>Specify Tone:</strong> Formal, casual, humorous, sentimental</li>
+                    <li><strong>Include References:</strong> Favorite colors, hobbies, recent events</li>
+                    <li><strong>Set Length:</strong> Short and sweet vs. detailed and heartfelt</li>
+                </ul>
+                
+                <h3>5. Ethical Considerations</h3>
+                <p>Use AI responsibly:</p>
+                <ul>
+                    <li>Always review and edit AI-generated content</li>
+                    <li>Add personal touches to make it authentic</li>
+                    <li>Be transparent if using AI (optional)</li>
+                    <li>Respect copyright and avoid plagiarism</li>
+                    <li>Consider cultural sensitivity in generated content</li>
+                </ul>
+                
+                <h3>6. Best Practices</h3>
+                <ul>
+                    <li>Use AI as a starting point, not the final product</li>
+                    <li>Combine multiple AI suggestions for unique results</li>
+                    <li>Test different prompts to find what works best</li>
+                    <li>Save successful prompts for future use</li>
+                    <li>Update your approach as AI technology evolves</li>
+                </ul>
+                
+                <h3>7. Limitations to Consider</h3>
+                <ul>
+                    <li>AI may not understand very specific cultural nuances</li>
+                    <li>Can sometimes produce generic or repetitive content</li>
+                    <li>May struggle with highly emotional or personal topics</li>
+                    <li>Requires human oversight for quality control</li>
+                    <li>May not capture your unique voice without guidance</li>
+                </ul>
+                
+                <p>AI is a powerful tool for creating wishes, but the most meaningful messages always come from the heart. Use AI to enhance your creativity, not replace your personal touch.</p>`
+            }
+        ];
+
+        // Generate blog/article cards
+        function generateBlogArticleCard(item) {
+            const typeIcon = item.type === 'blog' ? 'fas fa-blog' : 'fas fa-newspaper';
+            const typeLabel = item.type === 'blog' ? 'Blog Post' : 'SEO Article';
+            
+            return `
+                <article class="blog-article-card" data-id="${item.id}">
+                    <div class="blog-article-image">
+                        ${item.category}
+                    </div>
+                    <div class="blog-article-content">
+                        <div class="blog-article-meta">
+                            <span class="blog-article-category">${item.category}</span>
+                            <span><i class="${typeIcon}"></i> ${typeLabel}</span>
+                        </div>
+                        <h4 class="blog-article-title">${item.title}</h4>
+                        <p class="blog-article-excerpt">${item.excerpt}</p>
+                        <div class="blog-article-meta">
+                            <span><i class="far fa-calendar"></i> ${item.date}</span>
+                            <span><i class="far fa-clock"></i> ${item.readTime}</span>
+                        </div>
+                        <a href="#" class="read-more" data-id="${item.id}">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            `;
+        }
+
+        // Populate blog and articles
+        function populateBlogArticles() {
+            const blogArticlesGrid = document.getElementById('blog-articles-grid');
+            if (blogArticlesGrid) {
+                blogArticlesGrid.innerHTML = blogArticlesData.map(item => generateBlogArticleCard(item)).join('');
+            }
+        }
+
+        // Article modal functionality
+        const articleModal = document.getElementById('article-modal');
+        const closeModal = document.getElementById('close-modal');
+        const modalArticleContent = document.getElementById('modal-article-content');
+
+        function openArticleModal(itemId) {
+            const item = blogArticlesData.find(a => a.id == itemId);
+            if (item) {
+                const typeLabel = item.type === 'blog' ? 'Blog Post' : 'SEO Article';
+                
+                modalArticleContent.innerHTML = `
+                    <h1>${item.title}</h1>
+                    <div style="display: flex; align-items: center; gap: 10px; margin: 1.5rem 0 2rem; color: var(--gray-color);">
+                        <span class="blog-article-category">${item.category}</span>
+                        <span><i class="${item.type === 'blog' ? 'fas fa-blog' : 'fas fa-newspaper'}"></i> ${typeLabel}</span>
+                        <span><i class="far fa-calendar"></i> ${item.date}</span>
+                        <span><i class="far fa-clock"></i> ${item.readTime}</span>
+                    </div>
+                    ${item.fullContent}
+                    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--light-gray);">
+                        <p style="color: var(--gray-color); font-style: italic;">For more blog posts and articles, explore our complete collection at WishaImage.com</p>
+                    </div>
+                `;
+                articleModal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+                
+                // Close modal with Escape key
+                const closeModalOnEscape = (e) => {
+                    if (e.key === 'Escape') {
+                        articleModal.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                        document.removeEventListener('keydown', closeModalOnEscape);
+                    }
+                };
+                document.addEventListener('keydown', closeModalOnEscape);
+            }
+        }
+
+        // Toast notification functionality
+        const toast = document.getElementById('toast');
+        const toastMessage = document.getElementById('toast-message');
+
+        function showToast(message, type = 'success') {
+            toastMessage.textContent = message;
+            
+            if (type === 'warning') {
+                toast.style.background = '#fbbf24';
+            } else if (type === 'error') {
+                toast.style.background = '#ec4899';
+            } else {
+                toast.style.background = '#10b981';
+            }
+            
+            toast.style.display = 'flex';
+            
+            setTimeout(() => {
+                toast.style.display = 'none';
+            }, 3000);
+        }
+
+        // Smooth scroll function that works on both desktop and mobile
+        function smoothScrollTo(targetId) {
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                const headerHeight = document.querySelector('header').offsetHeight;
+                const targetPosition = targetElement.offsetTop - headerHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Initialize on DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Populate blog articles
+            populateBlogArticles();
+            
+            // Mobile Menu Toggle - FIXED FOR MOBILE
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navLinks = document.getElementById('navLinks');
+            
+            mobileMenuBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                navLinks.classList.toggle('active');
+                const isActive = navLinks.classList.contains('active');
+                mobileMenuBtn.innerHTML = isActive ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+            });
+            
+            // Close mobile menu when clicking outside on mobile
+            document.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768 && navLinks.classList.contains('active')) {
+                    if (!navLinks.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                        navLinks.classList.remove('active');
+                        mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                    }
+                }
+            });
+            
+            // Handle all anchor link clicks (including logo)
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    
+                    if (href === '#' || href === '#!') return;
+                    
+                    const targetElement = document.querySelector(href);
+                    if (targetElement) {
+                        e.preventDefault();
+                        
+                        // Close mobile menu if open
+                        if (navLinks.classList.contains('active')) {
+                            navLinks.classList.remove('active');
+                            mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                        }
+                        
+                        // Smooth scroll to target
+                        smoothScrollTo(href);
+                    }
+                });
+            });
+            
+            // FAQ Accordion
+            document.querySelectorAll('.faq-question').forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const icon = question.querySelector('i');
+                    
+                    // Toggle current answer
+                    answer.classList.toggle('active');
+                    icon.style.transform = answer.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0)';
+                    icon.style.transition = 'transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1)';
+                    
+                    // Close other answers
+                    document.querySelectorAll('.faq-answer').forEach(otherAnswer => {
+                        if (otherAnswer !== answer && otherAnswer.classList.contains('active')) {
+                            otherAnswer.classList.remove('active');
+                            const otherIcon = otherAnswer.previousElementSibling.querySelector('i');
+                            otherIcon.style.transform = 'rotate(0)';
+                        }
+                    });
+                });
+            });
+            
+            // Scroll animations with Intersection Observer
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        
+                        if (entry.target.classList.contains('image-card')) {
+                            entry.target.style.animation = 'cardAppear 0.8s cubic-bezier(0.22, 0.61, 0.36, 1)';
+                        }
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe elements for animation
+            document.querySelectorAll('.image-card, .blog-article-card, .category-card').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.8s cubic-bezier(0.22, 0.61, 0.36, 1), transform 0.8s cubic-bezier(0.22, 0.61, 0.36, 1)';
+                observer.observe(el);
+            });
+            
+            // Page Load Animation
+            window.addEventListener('load', () => {
+                document.getElementById('loading').style.display = 'none';
+                document.body.classList.add('loaded');
+                
+                // Create floating particles
+                createParticles();
+            });
+            
+            // Create floating particles
+            function createParticles() {
+                const particlesContainer = document.getElementById('particles');
+                const colors = ['rgba(79, 70, 229, 0.1)', 'rgba(251, 191, 36, 0.1)', 'rgba(236, 72, 153, 0.1)'];
+                
+                for (let i = 0; i < 15; i++) {
+                    const particle = document.createElement('div');
+                    particle.classList.add('particle');
+                    
+                    // Random properties
+                    const size = Math.random() * 40 + 15;
+                    const left = Math.random() * 100;
+                    const animationDuration = Math.random() * 25 + 15;
+                    const animationDelay = Math.random() * 5;
+                    const color = colors[Math.floor(Math.random() * colors.length)];
+                    
+                    particle.style.width = `${size}px`;
+                    particle.style.height = `${size}px`;
+                    particle.style.left = `${left}%`;
+                    particle.style.background = color;
+                    particle.style.animationDuration = `${animationDuration}s`;
+                    particle.style.animationDelay = `${animationDelay}s`;
+                    
+                    particlesContainer.appendChild(particle);
+                }
+            }
+            
+            // Scroll progress bar
+            window.addEventListener('scroll', () => {
+                const scrollProgress = document.getElementById('scrollProgress');
+                const scrollTop = document.documentElement.scrollTop;
+                const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrollPercent = (scrollTop / scrollHeight) * 100;
+                
+                scrollProgress.style.width = `${scrollPercent}%`;
+            });
+            
+            // Track Download Clicks with animation
+            document.querySelectorAll('.download-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Create download animation
+                    const originalText = this.innerHTML;
+                    this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Downloading...';
+                    this.style.pointerEvents = 'none';
+                    
+                    setTimeout(() => {
+                        this.innerHTML = '<i class="fas fa-check"></i> Downloaded!';
+                        this.style.backgroundColor = '#10b981';
+                        
+                        setTimeout(() => {
+                            this.innerHTML = originalText;
+                            this.style.backgroundColor = '';
+                            this.style.pointerEvents = 'auto';
+                            
+                            // Show toast notification
+                            showToast('Image downloaded successfully!');
+                        }, 1500);
+                    }, 1500);
+                });
+            });
+            
+            // Article modal close functionality
+            closeModal.addEventListener('click', function() {
+                articleModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            });
+
+            window.addEventListener('click', function(e) {
+                if (e.target === articleModal) {
+                    articleModal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+            
+            // Event delegation for article read-more links
+            document.addEventListener('click', function(e) {
+                // Read More button for articles
+                if (e.target.classList.contains('read-more') || e.target.closest('.read-more')) {
+                    e.preventDefault();
+                    const link = e.target.classList.contains('read-more') ? e.target : e.target.closest('.read-more');
+                    const articleId = link.getAttribute('data-id');
+                    openArticleModal(articleId);
+                }
+            });
+            
+            // REMOVED: Simulate Ad Loading
+            
+            // Add animation to section titles on scroll
+            const sectionTitles = document.querySelectorAll('.section-title');
+            
+            const titleObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const title = entry.target.querySelector('h2');
+                        title.style.animation = 'textGlow 3s ease-in-out infinite alternate';
+                    }
+                });
+            }, observerOptions);
+            
+            sectionTitles.forEach(title => titleObserver.observe(title));
+            
+            // Handle window resize for mobile menu
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 768) {
+                    // On larger screens, ensure menu is visible
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+            
+            // Fix for mobile viewport height
+            function setViewportHeight() {
+                let vh = window.innerHeight * 0.01;
+                document.documentElement.style.setProperty('--vh', `${vh}px`);
+            }
+            
+            setViewportHeight();
+            window.addEventListener('resize', setViewportHeight);
+        });
+    </script>
+</body>
+</html>
